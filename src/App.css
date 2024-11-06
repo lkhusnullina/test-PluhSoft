@@ -1,38 +1,82 @@
-.App {
+/* Основные стили для приложения */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Блок навигации */
+.navbar {
+  background-color: #0044cc;
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1em;
+}
+
+.navbar__item {
+  display: inline;
+}
+
+.navbar__link {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar__button {
+  background-color: #ffffff;
+  border: none;
+  padding: 0.5em 1em;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.navbar__button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Блок для основной страницы */
+.page-content {
+  padding: 2em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-content__title {
+  color: #0044cc;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page-content__text {
+  font-size: 1.2em;
+  color: #666;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Модификаторы для каждой страницы */
+.page-content--home {
+  background-color: #f0f8ff;
 }
 
-.App-link {
-  color: #61dafb;
+.page-content--projects {
+  background-color: #e6ffe6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page-content--application-form {
+  background-color: #fff0f5;
+}
+
+.page-content--about {
+  background-color: #fef5e6;
 }
