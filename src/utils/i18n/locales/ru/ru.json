@@ -1,10 +1,14 @@
 {
     "home": "Главная",
+    "homeContent": "Ориентируясь в цифровом пространстве, добиваешься успеха",
+    "homeContentForm": "Заполни заявку",
     "projects": "Проекты",
-    "applicationForm": "Форма заявки",
-    "about": "О компании",
-    "homeContent": "Добро пожаловать в нашу компанию!",
     "projectsContent": "Здесь представлены наши проекты.",
-    "applicationFormContent": "Заполните форму заявки.",
+    "applicationForm": "Форма заявки",
+    "applicationFormContent": "Заполните форму заявки",
+    "formName": "Ваше имя",
+    "formQuestion": "Ваш вопрос",
+    "formButton": "Отправить",
+    "about": "О компании",
     "aboutContent": "Узнайте больше о нашей компании."
   }

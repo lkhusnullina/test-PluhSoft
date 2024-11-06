@@ -1,10 +1,14 @@
 {
     "home": "Home",
+    "homeContent": "Navigating the digital landscape for success",
+    "homeContentForm" : "Fill out the application form",
     "projects": "Projects",
-    "applicationForm": "Application Form",
-    "about": "About Us",
-    "homeContent": "Welcome to our company!",
     "projectsContent": "Here are our projects.",
-    "applicationFormContent": "Fill out the application form.",
+    "applicationForm": "Application Form",
+    "applicationFormContent": "Fill out the application form",
+    "formName": "Your name",
+    "formQuestion": "Your question",
+    "formButton": "Submit",
+    "about": "About Us",
     "aboutContent": "Learn more about our company."
   }

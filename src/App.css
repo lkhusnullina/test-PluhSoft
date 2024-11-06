@@ -1,35 +1,41 @@
-/* Основные стили для приложения */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #ffffff;
+  color: #000000;
+
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1240px;
   max-height: 100vh;
   height: 100vh;
   margin: 0 auto;
   padding: 0;
 }
 
-/* Блок навигации */
+.header{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .navbar {
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background-color: #a966e0;
-  color: white;
   font-size: 20px;
 }
 
@@ -37,16 +43,23 @@ body {
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 20px;
+  gap: 50px;
 }
 
 .navbar__link {
-  color: white;
   text-decoration: none;
+  font-size: 20px;
+  color: #000000;
 }
 
 .navbar__link:hover {
-  color: #e4d8d8;
+  color: #6aa522;
+}
+
+.navbar__buttons {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
 }
 
 .navbar__button {
@@ -63,36 +76,120 @@ body {
   background-color: #e0e0e0;
 }
 
+.navbar__button--active {
+  background-color: #B9FF66;
+  color: #000000;
+}
+
 /* Блок для основной страницы */
 .page-content {
-  padding: 2em;
+  padding: 20px;
   text-align: center;
 }
 
+.page-content--home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-content__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .page-content__title {
-  color: #a966e0;
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 10px;
+
+  background-color: #B9FF66;
+  color: #000000;
+  font-size: 35px;
+  border-radius: 10px;
 }
 
 .page-content__text {
-  font-size: 1.2em;
-  color: #666;
+  font-size: 25px;
+  color: #000000;
 }
 
-/* Модификаторы для каждой страницы */
-.page-content--home {
-  background-color: #f0f8ff;
+.page-content__application {
+  margin-top: 50px;
+  width: 300px;
+  height: 68px;
+  border-radius: 14px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
 }
 
-.page-content--projects {
-  background-color: #e6ffe6;
+/* .page-content--application-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+
+.form {
+  width: 550px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-.page-content--application-form {
-  background-color: #fff0f5;
+.form__field {
+  margin-bottom: 15px;
 }
 
-.page-content--about {
-  background-color: #fef5e6;
+.form__label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form__input,
+.form__textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+  border-color: #B9FF66;
+  outline: none;
+}
+
+.form__textarea {
+  min-height: 100px;
+}
+
+.form__error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.form__submit {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form__submit:hover {
+  background-color: #6aa522;
 }

@@ -8,9 +8,11 @@ function App() {
     <div className="container">
         <header className="header">
           <NavBar/>
-          <ButtonSwitch></ButtonSwitch>
+          <ButtonSwitch/>
         </header>
-        <AppRoutes/>
+        <main>
+          <AppRoutes/>
+        </main>
     </div>
   );
 }
