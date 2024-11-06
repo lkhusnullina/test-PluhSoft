@@ -1,25 +1,17 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import ApplicationForm from "./pages/ApplicationForm";
-import About from "./pages/About";
+import ButtonSwitch from "./components/ButtonSwicth";
 import NavBar from "./components/NavBar";
+import { AppRoutes } from "./routes";
 
 function App() {
   return (
-    <>
-    
-    <Router>
-    <NavBar></NavBar>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/application-form" element={<ApplicationForm />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </Router>
-    </>
+    <div className="container">
+        <header className="header">
+          <NavBar/>
+          <ButtonSwitch></ButtonSwitch>
+        </header>
+        <AppRoutes/>
+    </div>
   );
 }
 
