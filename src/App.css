@@ -127,12 +127,17 @@ body {
   cursor: pointer;
 }
 
-/* .page-content--application-form {
+.project__card {
+  margin-top: 50px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-} */
+  justify-content: space-between;
+}
 
+.project__image {
+  width: 300px;
+}
 
 .form {
   width: 550px;
@@ -192,4 +197,9 @@ body {
 
 .form__submit:hover {
   background-color: #6aa522;
+}
+
+.page-content--about-image {
+  width: 600px;
+
 }
